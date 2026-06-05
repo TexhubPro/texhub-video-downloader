@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="app">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-content">
+        <div class="logo">
+          <img src="../../icons/icon48.png" alt="TexHub">
+          <h1>TexHub Video Downloader</h1>
+        </div>
+        <span class="badge" id="count">0</span>
+      </div>
+      <p class="header-sub">Detect &amp; download HLS streams and direct video files</p>
+    </header>
+
+    <!-- Stream list -->
+    <main class="content" id="content"></main>
+
+    <!-- Empty state -->
+    <div class="empty-state" id="emptyState">
+      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="4" y="8" width="40" height="32" rx="4" stroke="#484f58" stroke-width="2"/>
+        <polygon points="20,17 33,24 20,31" fill="#484f58"/>
+      </svg>
+      <p>No video streams detected</p>
+      <span>Browse a page with M3U8 / HLS video to get started</span>
+    </div>
+  </div>
+
+  <script src="../shared/utils.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
