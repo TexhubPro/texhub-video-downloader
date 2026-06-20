@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "TexHub Video Downloader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Detect and download HLS (M3U8) streams and direct video files (MP4, WebM, MKV, MOV and more) with quality selection and MP4 conversion.",
   "icons": {
     "16": "icons/icon16.png",
@@ -34,14 +34,23 @@
   },
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
-      "js": ["src/content/interceptor.js"],
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "src/content/interceptor.js"
+      ],
       "run_at": "document_start",
       "world": "MAIN"
     },
     {
-      "matches": ["<all_urls>"],
-      "js": ["src/shared/utils.js", "src/content/content.js"],
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "src/shared/utils.js",
+        "src/content/content.js"
+      ],
       "run_at": "document_start"
     }
   ]

@@ -14,26 +14,26 @@
 
 ---
 
-## ✨ Features
+## Features
 
-- **🎯 Automatic detection** — finds HLS streams **and** direct video files via network
-  requests, page scripts and `<video>` / `<source>` elements, including dynamically
-  loaded players.
-- **🎬 Many formats** — direct downloads for `.mp4`, `.m4v`, `.webm`, `.mkv`, `.mov`,
-  `.ogv`, `.avi`, `.flv`, `.wmv`, `.mpg` / `.mpeg`, `.3gp`. Direct files download
-  natively through the browser, so any size or session-protected file works.
-- **👁️ Inline preview** — direct files show a thumbnail with detected resolution,
-  duration and file size before you download.
-- **🧩 Quality selection** — pick any variant from an HLS master playlist; estimated
-  file sizes are shown when available.
-- **🔄 MP4 conversion** — lossless MPEG-TS → MP4 remux (with a `mux.js` fallback);
-  fMP4/MP4 and direct files keep their original container.
-- **🔐 AES-128 support** — encrypted HLS segments are decrypted on the fly.
-- **⏯️ Background downloads** — keep running after the popup closes; pause, resume and
-  cancel are supported.
-- **🖱️ In-page button** — a download button appears right on video elements.
+- **Automatic detection** — finds HLS streams **and** direct video files via network
+ requests, page scripts and `<video>` / `<source>` elements, including dynamically
+ loaded players.
+- **Many formats** — direct downloads for `.mp4`, `.m4v`, `.webm`, `.mkv`, `.mov`,
+ `.ogv`, `.avi`, `.flv`, `.wmv`, `.mpg` / `.mpeg`, `.3gp`. Direct files download
+ natively through the browser, so any size or session-protected file works.
+- **Inline preview** — direct files show a thumbnail with detected resolution,
+ duration and file size before you download.
+- **Quality selection** — pick any variant from an HLS master playlist; estimated
+ file sizes are shown when available.
+- **MP4 conversion** — lossless MPEG-TS → MP4 remux (with a `mux.js` fallback);
+ fMP4/MP4 and direct files keep their original container.
+- **AES-128 support** — encrypted HLS segments are decrypted on the fly.
+- **Background downloads** — keep running after the popup closes; pause, resume and
+ cancel are supported.
+- **In-page button** — a download button appears right on video elements.
 
-## 🚀 Install (developer mode)
+## Install (developer mode)
 
 1. Open `chrome://extensions`
 2. Enable **Developer mode** (top-right)
@@ -42,15 +42,15 @@
 
 > Works in Chrome, Edge, Brave and other Chromium browsers.
 
-## 🧭 How to use
+## How to use
 
 1. Open a page that plays a video.
 2. Click the TexHub toolbar icon (the badge shows how many sources were found).
 3. Choose a quality (for HLS) and hit **Download** — or click the button that appears
-   over the video.
+ over the video.
 4. The file is saved to your Downloads folder.
 
-## 🗂️ Project structure
+## Project structure
 
 ```
 texhub-video-downloader/
@@ -68,7 +68,7 @@ texhub-video-downloader/
         └── utils.js         # Shared helpers used across every context
 ```
 
-## 🔐 Permissions
+## Permissions
 
 | Permission | Why it's needed |
 |---|---|
@@ -82,15 +82,15 @@ texhub-video-downloader/
 Your privacy matters: the extension **collects nothing** and sends nothing to any
 server. See [PRIVACY.md](PRIVACY.md).
 
-## ⚖️ Legal
+## Legal
 
 Only download content you own or are authorised to download. Respect the terms of
 service of the sites you use and applicable copyright law.
 
-## 📄 License
+## License
 
 [MIT](LICENSE) © 2026 **TexHub Pro**
 
-## 📬 Contact
+## Contact
 
 Maintained by **TexHub Pro** — texus.tj@gmail.com
